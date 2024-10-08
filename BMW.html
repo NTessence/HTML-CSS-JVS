@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contenteditable="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #004d6b, #00283e);
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .hero {
+            height: 500px;
+            background-image: url('bmw-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-overlay h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-overlay p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #fff;
+            color: #333;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            background: #ddd;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .models {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .model {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 300px;
+            max-width: 300px;
+        }
+
+        .model h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .model img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .history {
+            background: #f9f9f9;
+            padding: 40px 0;
+        }
+
+        .history h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .history p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .footer {
+            background: #00283e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BMW</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#models">Modelos</a></li>
+                    <li><a href="#history">História</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h2>O Mundo da BMW</h2>
+            <p>Descubra a inovação, elegância e performance da BMW.</p>
+            <a href="#about" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre a BMW</h2>
+            <p>A BMW é uma das marcas mais renomadas no mundo automotivo, conhecida por seus carros de luxo, design icônico e tecnologias avançadas.</p>
+            <p>Desde sua fundação em 1916, a BMW tem sido líder em inovação e excelência, oferecendo uma ampla gama de veículos para satisfazer as necessidades de seus clientes.</p>
+        </div>
+    </section>
+
+    <section id="models" class="section">
+        <div class="container">
+            <h2>Modelos BMW</h2>
+            <div class="models">
+                <div class="model">
+                    <img src="bmw-model1.jpg" alt="Modelo BMW">
+                    <h3>BMW Série 3</h3>
+                    <p>O BMW Série 3 é um sedã esportivo de alto desempenho, conhecido por sua elegância e potência.</p>
+                </div>
+                <div class="model">
+                    <img src="bmw-model2.jpg" alt="Modelo BMW">
+                    <h3>BMW X5</h3>
+                    <p>O BMW X5 é um SUV de luxo que combina conforto, tecnologia e capacidade off-road.</p>
+                </div>
+                <div class="model">
+                    <img src="bmw-model3.jpg" alt="Modelo BMW">
+                    <h3>BMW i8</h3>
+                    <p>O BMW i8 é um supercarro híbrido plug-in que oferece desempenho excepcional e eficiência energética.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="history">
+        <div class="container">
+            <h2>História da BMW</h2>
+            <p>A BMW foi fundada em 1916 como uma fabricante de motores de avião, mas após a Primeira Guerra Mundial, a empresa começou a fabricar motocicletas e, eventualmente, carros.</p>
+            <p>A partir da década de 1960, a BMW consolidou sua posição como uma das principais marcas de carros de luxo do mundo, introduzindo modelos icônicos como o BMW 2002 e o BMW Série 3.</p>
+            <p>Hoje, a BMW continua a ser uma referência em inovação, design e performance, lançando constantemente novos modelos e tecnologias para atender às demandas do mercado global.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BMW NATHAN. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
